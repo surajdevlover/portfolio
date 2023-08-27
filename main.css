@@ -1,0 +1,366 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    /* font-size: var(--bs-body-font-size); */
+    /* font-weight: var(--bs-body-font-weight); */
+    /* line-height: var(--bs-body-line-height); */
+    /* color: var(--bs-body-color); */
+    /* text-align: var(--bs-body-text-align); */
+    /* background-color: var(--bs-body-bg); */
+    /* -webkit-text-size-adjust: 100%; */
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+    /* position: relative; */
+    /* margin:0; */
+    overflow-x:hidden;
+}
+
+/* The sidepanel menu */
+#mySidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed !important; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px; /* Place content 60px from the top */
+    transition: 0.7s; /* 0.7 second transition effect to slide in the sidepanel */
+}
+  
+/* The sidepanel links */
+#mySidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+#mySidepanel a:hover {
+    color: #f1f1f1;
+}
+  
+/* Position and style the close button (top right corner) */
+#mySidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+  
+/* Style the button that is used to open the sidepanel */
+#opennav {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #cfdcd2a6;
+    color: rgb(143, 117, 117);
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 20px;
+    border-radius: 40%;
+    top: 0;
+    position: fixed !important;
+}
+  
+#opennav:hover {
+    background-color: #7e9d92;
+}
+
+#mySidepanel:hover {
+    background-color: #111;
+}
+
+.bg-image #mySidepanel{
+    position: fixed !important; 
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("./imagee.jpg");
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0 0 2.5rem rgb(60, 55, 50));
+}
+  
+/* Position text in the middle of the page/image */
+.bg-text {
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(63, 62, 62, 0.3);  */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    height: 20%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #c6f0e8;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #7ba8a3; 
+}
+
+/* main image and heading  */
+.profile{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 17%;
+    padding: 30px;
+    border-radius: 30%;
+    filter: drop-shadow(0 0 1rem rgb(137, 188, 171));
+}
+
+hr {
+    background: linear-gradient(95.44deg,#e2ecef,#b9aff1);
+    height: 5px;
+    margin: 1.4rem 0;
+    color: inherit;
+    border-top: 2px solid;
+    opacity: .50;
+}
+
+/* bottom to top button */
+
+#scrollToTopBtn {
+    background-color: rgb(86, 68, 68);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* transition: background-color .3s, opacity .5s, visibility .5s; */
+    opacity: 0;
+    /* visibility: hidden; */
+    z-index: 900;
+  }
+  #scrollToTopBtn::after {
+    content: "\f077";
+    line-height: 50px;
+    color: #fff;
+  }
+  #scrollToTopBtn:hover {
+    cursor: pointer;
+    background-color: #53536b;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* footer */
+.footer{
+    background:#a3d6f2aa;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+    
+.footer .rowr .rowl .rowp{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .rowr h5{
+    font-size: 30px;
+    font:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer .rowr hr{
+    margin-left: 8em;
+    margin-right: 8em;
+    color: black;
+}
+    
+.footer .rowr a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+    
+.footer .rowr a:hover{
+    color:#fff;
+}
+    
+.footer .rowr a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .rowl ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .rowr a i{
+    margin:0% 3%;
+    }
+}
+
+/*waves****************************/
+.area{
+    background: #585fee;  
+    background: -webkit-linear-gradient(to left, #6a70e8, #4e54c8);  
+    width: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    width: 83%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(149, 200, 223, 0.796);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
