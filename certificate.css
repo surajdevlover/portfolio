@@ -1,0 +1,219 @@
+.text-main2{
+    color: #5da2bb;
+    font-weight: bolder!important;
+    font-size: 7em;
+    text-align: right;
+    margin-right: -8%;
+}
+
+.container2{
+    height:auto;
+    background: drop-shadow(0 0 2rem rgb(61, 68, 66));
+}
+
+#col-certi{
+    position: relative;
+    width: 100%;
+}
+
+.card5.card-cascade.wider {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card5 {
+    font-weight: 400;
+    border: 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.card5 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,0.125); */
+    border-radius: 0.25rem;
+}
+
+.card5.card-cascade.wider .view.view-cascade {
+    z-index: 2;
+}
+
+.card5.card-cascade .view.view-cascade {
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 8px 14px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.view .mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.waves-effect:hover {
+    box-shadow: 5px -2px rgba(81, 81, 81, 0.3);
+    background-size:130%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+/* #col-certi .card5 .view img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .6s ease-in-out;
+	transition: .6s ease-in-out;
+} */
+
+#col-certi:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.08);
+    -webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.rgba-white-slight, .rgba-white-slight:after {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.card5.card-cascade.wider .card-body.card-body-cascade {
+    border-bottom-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+}
+
+.card5.card-cascade.wider .card-body.card-body-cascade {
+    z-index: 1;
+    margin-right: 4%;
+    margin-left: 4%;
+    background: #fff;
+    border-radius: 0 0 0.25rem 0.25rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.card-body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 0 !important;
+    height: 240px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.card5 .card-body h4, .card5 .card-body h5{
+    font-weight: 400;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+h4, h5{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.card5 .card-body .card-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #747373;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px){
+    #col-certi {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+}
+
+@media (min-width: 768px){
+    .col-md-12 {
+        -ms-flex: 8 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container2 {
+        max-width:480px
+    }
+}
+
+@media (min-width: 768px) {
+    .container2 {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container2 {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container2 {
+        max-width:1140px
+    }
+}
+
+@media (min-width: 1400px) {
+    .container2 {
+        max-width:1320px
+    }
+}
